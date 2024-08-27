@@ -1,5 +1,15 @@
 html, body, #root {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-page-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d; /* Secondary background for PC */
 }
 
 .container {
@@ -33,3 +43,22 @@ html, body, #root {
   margin-right: 0.5rem;
 }
 
+.view-all-cards {
+  width: 50%;
+  height: 80%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .full-page-wrapper {
+    background-color: white; /* White background for Mobile */
+  }
+
+  .view-all-cards {
+    width: 90%;
+    height: 100%;
+    background-color: white; /* White background for Mobile */
+  }
+}
